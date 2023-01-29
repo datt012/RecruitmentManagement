@@ -5,17 +5,17 @@ exports.send = (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'chjkien9x@gmail.com', // generated ethereal user
-            pass: 'zumwehmtzismwuyb', // generated ethereal password
+            user: 'ttdat2112@gmail.com', // generated ethereal user
+            pass: 'qipvfezfbnvfuwsp', // generated ethereal password
         },
     });
 
     // send mail with defined transport object
     transporter.sendMail(
         {
-            from: 'chjkien9x@gmail.com', // sender address
+            from: 'ttdat2112@gmail.com', // sender address
             to: email, // list of receivers
-            subject: 'Web Việc làm', // Subject line
+            subject: 'Job search', // Subject line
             text: textSendMail, // plain text body
             html: `<b>${textSendMail}</b>`, // html body
         },

@@ -12,7 +12,7 @@ import { updatecompany } from "../Slice/companySlice";
 export default function CheckCompany() {
   const columns = [
     {
-      title: "tên tin tức",
+      title: "Công ty",
       dataIndex: "name",
     },
     {

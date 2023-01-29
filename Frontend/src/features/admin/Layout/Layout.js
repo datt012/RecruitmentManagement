@@ -10,17 +10,12 @@ import Companies from "../Companies/Companies";
 import CompaniesInfor from "../Companies/CompaniesInfor";
 import AddContact from "../Contact/AddContact";
 import Contact from "../Contact/Contact";
-import AddFormCv from "../FormCV/AddFormCV";
-import FormCv from "../FormCV/FormCV";
 import Jobs from "../Jobs/Jobs";
 import Statistical from "../Statistical/Statistical";
 import AddSocialNetwork from "../SocialNetwork/addSocialNetwork";
 import SocialNetwork from "../SocialNetwork/SocialNetwork";
-import AddTag from "../Tag/AddTag";
-import Tag from "../Tag/Tag";
 import AddTypeWork from "../TypeWork/AddTypeWork";
 import TypeWork from "../TypeWork/TypeWork";
-import User from "../User/User";
 import CheckJob from "../CheckJob/CheckJob";
 export default function Nav() {
     const match = useRouteMatch();
@@ -101,7 +96,7 @@ export default function Nav() {
                             <Link to={`${match.url}/checkJobs`}>Duyệt công việc</Link>
                         </Menu.Item>
 
-                        <Menu.Item
+                        {/* <Menu.Item
                             key="2"
                             icon={
                                 state.collapsed === true ? (
@@ -112,7 +107,7 @@ export default function Nav() {
                             }
                         >
                             <Link to={`${match.url}/tag`}>Tag</Link>
-                        </Menu.Item>
+                        </Menu.Item> */}
                         <Menu.Item
                             key="5"
                             icon={
@@ -160,18 +155,6 @@ export default function Nav() {
                             }
                         >
                             <Link to={`${match.url}/companies`}>Công ty</Link>
-                        </Menu.Item>
-                        <Menu.Item
-                            key="7"
-                            icon={
-                                state.collapsed === true ? (
-                                    <span className="fas fa-layer-group"></span>
-                                ) : (
-                                    <span className="fas fa-layer-group mr-2"></span>
-                                )
-                            }
-                        >
-                            <Link to={`${match.url}/formCV`}>Form CV</Link>
                         </Menu.Item>
                         <Menu.Item
                             key="8"
@@ -237,17 +220,14 @@ export default function Nav() {
                                 <Statistical />
                             </Route>
 
-                            <Route exact path={`${match.path}/tag`}>
+                            {/* <Route exact path={`${match.path}/tag`}>
                                 <Tag url={match.url} />
-                            </Route>
+                            </Route> */}
                             <Route exact path={`${match.path}/socialNetwork`}>
                                 <SocialNetwork url={match.url} />
                             </Route>
                             <Route exact path={`${match.path}/contact`}>
                                 <Contact url={match.url} />
-                            </Route>
-                            <Route exact path={`${match.path}/formCV`}>
-                                <FormCv url={match.url} />
                             </Route>
                             <Route exact path={`${match.path}/work`}>
                                 <Jobs url={match.url} />
@@ -260,12 +240,6 @@ export default function Nav() {
                             </Route>
                             <Route exact path={`${match.path}/checkJobs`}>
                                 <CheckJob url={match.url} />
-                            </Route>
-                            <Route path={`${match.path}/formCV/addFormCV`}>
-                                <AddFormCv url={match.url} />
-                            </Route>
-                            <Route path={`${match.path}/formCV/editFormCV/:id`}>
-                                <AddFormCv url={match.url} />
                             </Route>
                             <Route path={`${match.path}/socialNetwork/addSocialNetwork`}>
                                 <AddSocialNetwork url={match.url} />
@@ -291,12 +265,12 @@ export default function Nav() {
                             <Route path={`${match.path}/companies/infor/:id`}>
                                 <CompaniesInfor url={match.url} />
                             </Route>
-                            <Route path={`${match.path}/tag/addTag`}>
+                            {/* <Route path={`${match.path}/tag/addTag`}>
                                 <AddTag url={match.url} />
                             </Route>
                             <Route path={`${match.path}/tag/editTag/:id`}>
                                 <AddTag url={match.url} />
-                            </Route>
+                            </Route> */}
                             <Route path={`${match.path}/typeWork/addTypeWork`}>
                                 <AddTypeWork url={match.url} />
                             </Route>

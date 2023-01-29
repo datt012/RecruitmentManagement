@@ -12,11 +12,11 @@ import {
 export default function TypeWork() {
   const columns = [
     {
-      title: "tên loại công việc",
+      title: "Loại công việc",
       dataIndex: "name",
     },
     {
-      title: "icon",
+      title: "Icon",
       dataIndex: "icon",
     },
     {
@@ -24,7 +24,7 @@ export default function TypeWork() {
       dataIndex: "status",
     },
     {
-      title: "Action",
+      title: "Sửa/Xoá",
       dataIndex: "action",
     },
   ];
