@@ -2,11 +2,11 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### Install NodeJS 14.18.0
 ### Install MySQL
 ### Import file database.sql in MySQL
+
+In the project directory, you can run:
 
 ### `npm i` in 2 folders
 ### `npm start` in 2 folders
