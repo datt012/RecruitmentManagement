@@ -1,6 +1,5 @@
 # Recruitment Management System
 
-## Available Scripts
 
 ### Install NodeJS 14.18.0
 ### Install MySQL
