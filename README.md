@@ -1,4 +1,4 @@
-# Recruitment Management System
+# Recruitment Management : Jobit
 
 
 ### Install NodeJS 14.18.0
